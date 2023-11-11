@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaccination Center</title>
+  <link rel="stylesheet" href="./admin-dashboard.css" />
+  <link rel="stylesheet" href="center.css" />
+
+  <!-- Boxicons CSS -->
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <span class="logo_name"><a href="./user-dashboard.html"><img src="./images/logo111.png" alt="" /> </a></span>
+      <a href="./user-dashboard.html"><img src="./images/logo111.png (2).png" alt="" class="second-img"
+          style="width: 35px" /></a>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="admin-dashboard.html"><i class="bx bx-grid-alt"></i>
+          <span class="link_name">Dashboard</span></a>
+        <ul class="sub-menu blank">
+          <li>
+            <a class="link_name" href="admin-dashboard.html">Dahboard</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="view-user.html"><i class="fas fa-street-view"></i>
+          <span class="link_name">View Users</span></a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="view-user.html">View Users</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="update.html"><i class="bx bxs-virus"></i>
+          <span class="link_name">Update COVID-19 Status</span></a>
+        <ul class="sub-menu blank">
+          <li>
+            <a class="link_name" href="update.html">Update COVID-19 Status</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="alert.html"><i class="fas fa-exclamation-triangle"></i>
+          <span class="link_name">Alert User</span></a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="alert.html">Alert User</a></li>
+        </ul>
+      </li>
+      <li class="active showMenu">
+        <div class="icon-link">
+          <a href="#"><i class="far fa-hospital"></i>
+            <span class="link_name">Check Nearby</span></a>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Check Nearby</a></li>
+          <li id="dashboard-8" class="icon-text" target="8">
+            <a href="./vaccination-center.html" class="active">Vaccination Center</a>
+          </li>
+          <li id="dashboard-8" class="icon-text" target="8">
+            <a href="./donation-center.html">Plasma Donation Center</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="./view_about.html"><i class=" fa fa-address-book"></i>
+          <span class="link_name">About Us</span></a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="./view_about.html">View About</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class="bx bx-menu" style="float: left"></i>
+      <div class="logo-img">
+        <img src="./images/logo111.png" alt="" />
+      </div>
+
+      <div class="search-bell-account-grid">
+        <div class="search">
+          <i class="bx bx-search-alt-2"></i>
+        </div>
+        <!-- <div class="bell">
+            <i class="bx bxs-bell"></i>
+          </div> -->
+        <div class="account">
+          <img src="./images/best-doctors2.jpg" alt="" />
+        </div>
+        <div class="grid">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </div>
+
+      <div class="account-section">
+        <ul>
+          <li><a href="my-profile.html">My Profile</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- ///////////////////////////////////////////// -->
+    <div class="dashboard-section dashboard-section-1 active">
+      <!-- Breadcumbs Section -->
+      <ul class="breadcrumbs">
+        <h4>Dashboard</h4>
+        <li class="breadcrumbs__item">
+          <a href="./user-dashboard.html" class="breadcrumbs__link">
+            <i class="bx bx-home"></i>
+            Home</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="./vaccination-center.html" class="breadcrumbs__link breadcrumbs__link--active">Vaccination Center</a>
+        </li>
+      </ul>
+      <!-- Breadcumbs Section End-->
+      <!-- ////////////////////////////////////////////// -->
+    </div>
+
+    <div class="form-table">
+      <div class="title">
+        <h5><b>Vaccination </b>Form</h5>
+        <div class="search-div">
+          <input type="text" placeholder="search here.." />
+          <i class="bx bx-search-alt-2"></i>
+        </div>
+      </div>
+      <form action="">
+        <div class="form-control">
+          <label for="">Vaccination Center Name</label>
+          <input type="text" name="" id="" placeholder="Vaccination Center" />
+        </div>
+        <div class="form-control">
+          <label for="">Address</label>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-control">
+          <label for="">City</label>
+          <select name="" id="">
+            <option value="">City</option>
+            <option value="">Karachi</option>
+            <option value="">Rawalpindi</option>
+            <option value="">Lahore</option>
+            <option value="">Peshawar</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label for="">Country</label>
+          <select name="" id="">
+            <option value="">Country</option>
+            <option value="">Pakistan</option>
+            <option value="">India</option>
+            <option value="">Endland</option>
+            <option value="">Spain</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label for="">Phone no:</label>
+          <input type="number" name="" id="" placeholder="Phone no" />
+        </div>
+        <a href=""><button class="submit">Add</button></a>
+      </form>
+
+      <table id="table">
+        <thead>
+          <th>Center Name</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>Country</th>
+          <th>Phone no</th>
+          <th>Action</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Center Name">ABC Noit</td>
+            <td data-label="Address">G11/ Sreet #4 / Sadiq Town</td>
+            <td data-label="City">Rawalpindi</td>
+            <td data-label="Country">Pakistan</td>
+            <td data-label="Phone no">+92314 2347645</td>
+            <td data-label="Action">
+              <a href=""><i class="fas fa-edit btn btn--show-modal"></i></a>
+              <a href=""><i class="fas fa-trash-alt"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Center Name">ABC Noit</td>
+            <td data-label="Address">G11/ Sreet #4 / Sadiq Town</td>
+            <td data-label="City">Rawalpindi</td>
+            <td data-label="Country">Pakistan</td>
+            <td data-label="Phone no">+92314 2347645</td>
+            <td data-label="Action">
+              <a href=""><i class="fas fa-edit btn btn--show-modal"></i></a>
+              <a href=""><i class="fas fa-trash-alt"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Center Name">ABC Noit</td>
+            <td data-label="Address">G11/ Sreet #4 / Sadiq Town</td>
+            <td data-label="City">Rawalpindi</td>
+            <td data-label="Country">Pakistan</td>
+            <td data-label="Phone no">+92314 2347645</td>
+            <td data-label="Action">
+              <a href=""><i class="fas fa-edit btn btn--show-modal"></i></a>
+              <a href=""><i class="fas fa-trash-alt"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Center Name">ABC Noit</td>
+            <td data-label="Address">G11/ Sreet #4 / Sadiq Town</td>
+            <td data-label="City">Rawalpindi</td>
+            <td data-label="Country">Pakistan</td>
+            <td data-label="Phone no">+92314 2347645</td>
+            <td data-label="Action">
+              <a href=""><i class="fas fa-edit btn btn--show-modal"></i></a>
+              <a href=""><i class="fas fa-trash-alt"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Center Name">ABC Noit</td>
+            <td data-label="Address">G11/ Sreet #4 / Sadiq Town</td>
+            <td data-label="City">Rawalpindi</td>
+            <td data-label="Country">Pakistan</td>
+            <td data-label="Phone no">+92314 2347645</td>
+            <td data-label="Action">
+              <a href=""><i class="fas fa-edit btn btn--show-modal"></i></a>
+              <a href=""><i class="fas fa-trash-alt"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Center Name">ABC Noit</td>
+            <td data-label="Address">G11/ Sreet #4 / Sadiq Town</td>
+            <td data-label="City">Rawalpindi</td>
+            <td data-label="Country">Pakistan</td>
+            <td data-label="Phone no">+92314 2347645</td>
+            <td data-label="Action">
+              <a href=""><i class="fas fa-edit btn btn--show-modal"></i></a>
+              <a href=""><i class="fas fa-trash-alt"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Center Name">ABC Noit</td>
+            <td data-label="Address">G11/ Sreet #4 / Sadiq Town</td>
+            <td data-label="City">Rawalpindi</td>
+            <td data-label="Country">Pakistan</td>
+            <td data-label="Phone no">+92314 2347645</td>
+            <td data-label="Action">
+              <a href=""><i class="fas fa-edit btn btn--show-modal"></i></a>
+              <a href=""><i class="fas fa-trash-alt"></i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <div class="modal-1 hidden">
+    <button class="btn--close-modal">&times;</button>
+    <h2 class="modal__header">
+      Fill Out The
+      <span class="highlight">Form</span>
+    </h2>
+    <form class="modal__form">
+      <label>Center Name</label>
+      <input type="text" />
+      <label>Address</label>
+      <input type="text" />
+      <label>City</label>
+      <select name="" id="">
+        <option value="">City</option>
+        <option value="">Rawalpindi</option>
+        <option value="">Lahore</option>
+        <option value="">Karachi</option>
+        <option value="">Peshawar</option>
+      </select>
+      <label>Country</label>
+      <select name="" id="">
+        <option value="">Country</option>
+        <option value="">Pakistan</option>
+        <option value="">India</option>
+        <option value="">Spain</option>
+        <option value="">Italy</option>
+      </select>
+
+      <label>Phone</label>
+      <input type="number" />
+
+      <button class="btn">Submit</button>
+    </form>
+  </div>
+  <div class="overlay hidden"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="./admin-dashboard.js"></script>
+  <script>
+    const modal = document.querySelector(".modal-1");
+    const overlay = document.querySelector(".overlay");
+    const btnCloseModal = document.querySelector(".btn--close-modal");
+    const btnsOpenModal = document.querySelectorAll(".btn--show-modal");
+
+    // Modal window
+
+    const openModal = function (e) {
+      e.preventDefault();
+      modal.classList.remove("hidden");
+      overlay.classList.remove("hidden");
+    };
+
+    const closeModal = function () {
+      modal.classList.add("hidden");
+      overlay.classList.add("hidden");
+    };
+
+    btnsOpenModal.forEach((btn) => {
+      btn.addEventListener("click", openModal);
+    });
+
+    for (let i = 0; i < btnsOpenModal.length; i++)
+      btnsOpenModal[i].addEventListener("click", openModal);
+
+    btnCloseModal.addEventListener("click", closeModal);
+    overlay.addEventListener("click", closeModal);
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+        closeModal();
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>View User</title>
+  <link rel="stylesheet" href="./admin-dashboard.css" />
+  <!-- <link rel="stylesheet" href="./contact.css" /> -->
+
+  <!-- Boxicons CSS -->
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="./view-user.css" />
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <span class="logo_name"><a href="dashboard.html"><img src="./images/logo111.png" alt="" /> </a></span>
+      <a href="dashboard.html"><img src="./images/logo111.png (2).png" alt="" class="second-img"
+          style="width: 35px" /></a>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="admin-dashboard.html"><i class="bx bx-grid-alt"></i>
+          <span class="link_name">Dashboard</span></a>
+        <ul class="sub-menu blank">
+          <li>
+            <a class="link_name" href="admin-dashboard.html">Dahboard</a>
+          </li>
+        </ul>
+      </li>
+      <li class="active">
+        <a href="view-user.html"><i class="fas fa-street-view"></i>
+          <span class="link_name">View Users</span></a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="view-user.html">View Users</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="update.html"><i class="bx bxs-virus"></i>
+          <span class="link_name">Update COVID-19 Status</span></a>
+        <ul class="sub-menu blank">
+          <li>
+            <a class="link_name" href="update.html">Update COVID-19 Status</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="alert.html"><i class="fas fa-exclamation-triangle"></i>
+          <span class="link_name">Alert User</span></a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="alert.html">Alert User</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="icon-link">
+          <a href="#"><i class="far fa-hospital"></i>
+            <span class="link_name">Check Nearby</span></a>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Check Nearby</a></li>
+          <li id="dashboard-8" class="icon-text" target="8">
+            <a href="./vaccination-center.html">Vaccination Center</a>
+          </li>
+          <li id="dashboard-8" class="icon-text" target="8">
+            <a href="./donation-center.html">Plasma Donation Center</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="./view_about.html"><i class=" fa fa-address-book"></i>
+          <span class="link_name">About Us</span></a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="./view_about.html">View About</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class="bx bx-menu" style="float: left"></i>
+      <div class="logo-img">
+        <img src="./images/logo111.png" alt="" />
+      </div>
+
+      <div class="search-bell-account-grid">
+        <div class="search">
+          <i class="bx bx-search-alt-2"></i>
+        </div>
+
+        <div class="account">
+          <img src="./images/best-doctors2.jpg" alt="" />
+        </div>
+
+      </div>
+
+
+      <div class="account-section">
+        <ul>
+          <li><a href="my-profile.html">My Profile</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- ///////////////////////////////////////////// -->
+    <div class="dashboard-section dashboard-section-1 active">
+      <!-- Breadcumbs Section -->
+      <ul class="breadcrumbs">
+        <h4>Dashboard</h4>
+        <li class="breadcrumbs__item">
+          <a href="./admin-dashboard.html" class="breadcrumbs__link">
+            <i class="bx bx-home"></i>
+            Home</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="./view-user.html" class="breadcrumbs__link breadcrumbs__link--active">View Users</a>
+        </li>
+      </ul>
+      <!-- Breadcumbs Section End-->
+      <!-- ////////////////////////////////////////////// -->
+    </div>
+
+    <div class="user-table">
+      <div class="title">
+        <h5><b>View </b>Users</h5>
+        <div class="search-div">
+          <input type="text" placeholder="search here.." />
+          <i class="bx bx-search-alt-2"></i>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <th>S.no</th>
+          <th>Name</th>
+          <th>Address</th>
+          <th>District</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>Symptoms</th>
+          <th>Travel History</th>
+          <th>Picture</th>
+          <th>Status</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="S.no">2</td>
+            <td data-label="Name">Ali</td>
+            <td data-label="Address">G20 Street #1, Islamabad</td>
+            <td data-label="District">Punjab</td>
+            <td data-label="Phone">+92312 5635873</td>
+            <td data-label="Email">info@gmail.com</td>
+            <td data-label="Symptoms">fever, cough, loss of taste</td>
+            <td data-label="Travel History">Iran, Turkey, Spain</td>
+            <td data-label="Picture"><img src="./images/best-doctors3.jpg" alt=""
+                style="width: 50px; height: 50px; object-fit: cover;">
+            </td>
+            <td data-label="Status">
+              <select name="" id="">
+                <option value="">Status</option>
+                <option value="">Normal</option>
+                <option value="">Covid</option>
+              </select>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="./admin-dashboard.js"></script>
+</body>
+
+</html>

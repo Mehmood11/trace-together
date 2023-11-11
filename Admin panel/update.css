@@ -1,0 +1,112 @@
+:root {
+  --primary: #6f42c1;
+  --red: #dc3545;
+}
+.updates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.updates .update-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  box-shadow: 2px 3px 14px 0px #c1c1c1;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 20px;
+}
+.updates .update-1 .update-text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.updates .update-1 .update-text h2 i {
+  font-size: 29px;
+  transition: 0.3s ease;
+  color: var(--red);
+}
+.updates .update-1 .update-text h2 i:hover {
+  transform: scale(1.12);
+}
+.updates .update-1 .update-text h6 {
+  padding: 10px;
+  background-color: var(--red);
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.updates .update-1 a {
+  align-self: flex-end;
+}
+button {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 7px;
+  background-color: var(--red);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover {
+  background-color: black;
+}
+
+@media screen and (max-width: 1280px) {
+  .updates {
+    flex-wrap: wrap;
+  }
+  .updates .update-1 {
+    width: 380px;
+  }
+}
+@media screen and (max-width: 1082px) {
+  .updates .update-1 {
+    width: 330px;
+  }
+  .updates .update-1 .update-text h2 span {
+    font-size: 15px;
+  }
+  .updates .update-1 .update-text h6 {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .updates .update-1 {
+    width: 240px;
+  }
+  .updates .update-1 .update-text h2 span {
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .updates .update-1 {
+    width: 100%;
+  }
+  .updates .update-1 .update-text h2 span {
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 400px) {
+  .updates {
+    padding: 5px;
+  }
+  .updates .update-1 {
+    width: 100%;
+    padding: 5px;
+  }
+  .updates .update-1 .update-text h2 span {
+    white-space: nowrap;
+  }
+  .updates .update-1 .update-text h6,
+  button {
+    font-size: 10px;
+    padding: 9px;
+  }
+}

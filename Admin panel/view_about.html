@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation Center</title>
+    <link rel="stylesheet" href="./admin-dashboard.css" />
+    <link rel="stylesheet" href="./center.css" />
+
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <span class="logo_name"><a href="./user-dashboard.html"><img src="./images/logo111.png" alt="" />
+                </a></span>
+            <a href="./user-dashboard.html"><img src="./images/logo111.png (2).png" alt="" class="second-img"
+                    style="width: 35px" /></a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="admin-dashboard.html"><i class="bx bx-grid-alt"></i>
+                    <span class="link_name">Dashboard</span></a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link_name" href="admin-dashboard.html">Dahboard</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="view-user.html"><i class="fas fa-street-view"></i>
+                    <span class="link_name">View Users</span></a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="view-user.html">View Users</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="update.html"><i class="bx bxs-virus"></i>
+                    <span class="link_name">Update COVID-19 Status</span></a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link_name" href="update.html">Update COVID-19 Status</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="alert.html"><i class="fas fa-exclamation-triangle"></i>
+                    <span class="link_name">Alert User</span></a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="alert.html">Alert User</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="#"><i class="far fa-hospital"></i>
+                        <span class="link_name">Check Nearby</span></a>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Check Nearby</a></li>
+                    <li id="dashboard-8" class="icon-text" target="8">
+                        <a href="./vaccination-center.html">Vaccination Center</a>
+                    </li>
+                    <li id="dashboard-8" class="icon-text" target="8">
+                        <a href="./donation-center.html" class="active">Plasma Donation Center</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="active">
+                <a href="./view_about.html"><i class=" fa fa-address-book"></i>
+                    <span class="link_name">About Us</span></a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="./view_about.html">View About</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <div class="home-content">
+            <i class="bx bx-menu" style="float: left"></i>
+            <div class="logo-img">
+                <img src="./images/logo111.png" alt="" />
+            </div>
+
+            <div class="search-bell-account-grid">
+
+                <div class="account">
+                    <img src="./images/best-doctors2.jpg" alt="" />
+                </div>
+
+            </div>
+
+
+
+            <div class="account-section">
+                <ul>
+                    <li><a href="my-profile.html">My Profile</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- ///////////////////////////////////////////// -->
+        <div class="dashboard-section dashboard-section-1 active">
+            <!-- Breadcumbs Section -->
+            <ul class="breadcrumbs">
+                <h4>Dashboard</h4>
+                <li class="breadcrumbs__item">
+                    <a href="./admin-dashboard.html" class="breadcrumbs__link">
+                        <i class="bx bx-home"></i>
+                        Home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="./view_about.html" class="breadcrumbs__link breadcrumbs__link--active">Donation
+                        About Us</a>
+                </li>
+            </ul>
+            <!-- Breadcumbs Section End-->
+            <!-- ////////////////////////////////////////////// -->
+        </div>
+        <div class="form-table" style="padding: 8px
+        ;">
+            <div class="title">
+                <h5><b>View</b> About</h5>
+                <a href="./about_form.html"> <button>Add New</button></a>
+            </div>
+            <table>
+                <thead>
+                    <th>Title</th>
+                    <th>Description</th>
+
+                    <th>Status</th>
+
+                    <th>Update</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Title">Speed1</td>
+                        <td data-label="DESC">
+                            The CPS Test is a free click per second test, which measures your
+                            mouse clicking speed in given time frame. Playing the CPS test
+                            game is easy and fun at the same time. The game is suitable for
+                            all age groups, so don't worry if you are just a high school
+                            student or a person with a corporate job. Have you wondered how
+                            many mouse clicks can you accomplish in thirty seconds? Well, many
+                            might not even know if there is a way to calculate such an
+                            atypical activity. It might come as a surprise that not only there
+                            is a way to calculate the number of clicks per given timeframe but
+                            also many users play the game and compete globally.
+                        </td>
+
+                        <td data-label="Status">
+                            <select>
+                                <option>Active</option>
+                                <option>Disable</option>
+                                <!-- <option>Expired</option> -->
+                            </select>
+                        </td>
+
+                        <td data-label="Update">
+                            <i class="fas fa-edit" style="color: blue"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="./admin-dashboard.js"></script>
+</body>
+
+</html>

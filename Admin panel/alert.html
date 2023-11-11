@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alert User</title>
+  <link rel="stylesheet" href="./admin-dashboard.css" />
+  <!-- <link rel="stylesheet" href="./contact.css" /> -->
+
+  <!-- Boxicons CSS -->
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="./view-user.css" />
+  <link rel="stylesheet" href="./alert.css" />
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <span class="logo_name"><a href="dashboard.html"><img src="./images/logo111.png" alt="" /> </a></span>
+      <a href="dashboard.html"><img src="./images/logo111.png (2).png" alt="" class="second-img"
+          style="width: 35px" /></a>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="admin-dashboard.html"><i class="bx bx-grid-alt"></i>
+          <span class="link_name">Dashboard</span></a>
+        <ul class="sub-menu blank">
+          <li>
+            <a class="link_name" href="admin-dashboard.html">Dahboard</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="view-user.html"><i class="fas fa-street-view"></i>
+          <span class="link_name">View Users</span></a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="view-user.html">View Users</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="update.html"><i class="bx bxs-virus"></i>
+          <span class="link_name">Update COVID-19 Status</span></a>
+        <ul class="sub-menu blank">
+          <li>
+            <a class="link_name" href="update.html">Update COVID-19 Status</a>
+          </li>
+        </ul>
+      </li>
+      <li class="active">
+        <a href="alert.html"><i class="fas fa-exclamation-triangle"></i>
+          <span class="link_name">Alert User</span></a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="alert.html">Alert User</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="icon-link">
+          <a href="#"><i class="far fa-hospital"></i>
+            <span class="link_name">Check Nearby</span></a>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Check Nearby</a></li>
+          <li id="dashboard-8" class="icon-text" target="8">
+            <a href="./vaccination-center.html">Vaccination Center</a>
+          </li>
+          <li id="dashboard-8" class="icon-text" target="8">
+            <a href="./donation-center.html">Plasma Donation Center</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="./view_about.html"><i class="fas fa-exclamation-triangle"></i>
+          <span class="link_name">About Us</span></a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="./view_about.html">View About</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class="bx bx-menu" style="float: left"></i>
+      <div class="logo-img">
+        <img src="./images/logo111.png" alt="" />
+      </div>
+
+      <div class="search-bell-account-grid">
+
+        <div class="account">
+          <img src="./images/best-doctors2.jpg" alt="" />
+        </div>
+
+      </div>
+
+      <div class="account-section">
+        <ul>
+          <li><a href="my-profile.html">My Profile</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- ///////////////////////////////////////////// -->
+    <div class="dashboard-section dashboard-section-1 active">
+      <!-- Breadcumbs Section -->
+      <ul class="breadcrumbs">
+        <h4>Dashboard</h4>
+        <li class="breadcrumbs__item">
+          <a href="./admin-dashboard.html" class="breadcrumbs__link">
+            <i class="bx bx-home"></i>
+            Home</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="./alert.html" class="breadcrumbs__link breadcrumbs__link--active">Alert User</a>
+        </li>
+      </ul>
+      <!-- Breadcumbs Section End-->
+      <!-- ////////////////////////////////////////////// -->
+    </div>
+    <div class="alert-user">
+      <div class="title">
+        <h5><b>Alert</b> User</h5>
+
+      </div>
+      <form action="">
+        <div class="form-control form-control-1 city">
+          <label for="City">Select City:</label>
+          <select name="drop" id="location">
+            <option value="city">City</option>
+            <option value="rawalpindi">Rawalpindi</option>
+            <option value="lahore">Lahore</option>
+            <option value="Karachi">Karachi</option>
+            <option value="Peshawar">Peshawar</option>
+          </select>
+        </div>
+        <div class="form-control form-control-2" id="second">
+          <label for="area">Select Area:</label>
+          <select name="term">
+            <option value="area">Select Rawalpindi Area</option>
+            <option value="1">Kalma Chok</option>
+            <option value="1">Dhoke Banaras</option>
+            <option value="1">Niazi Town</option>
+          </select>
+        </div>
+        <div class="form-control form-control-2" id="second1">
+          <label for="area">Select Area:</label>
+          <select name="term">
+            <option value="area">Select Lahore Area</option>
+            <option value="1">Azizabad</option>
+            <option value="1">Faisal Bagh</option>
+            <option value="1">Qaiser</option>
+          </select>
+        </div>
+        <div class="form-control form-control-2" id="second2">
+          <label for="area">Select Area:</label>
+          <select name="term">
+            <option value="area">Select Karachi Area</option>
+            <option value="1">Baldia</option>
+            <option value="1">Bin Qasim</option>
+            <option value="1">Korangi</option>
+          </select>
+        </div>
+        <div class="form-control form-control-2" id="second3">
+          <label for="area">Select Area:</label>
+          <select name="term">
+            <option value="area">Select Peshawar Area</option>
+            <option value="1">Mahabat Khan Masjid</option>
+            <option value="1">Bab-e-Khyber.</option>
+            <option value="1">Khyber Charsi Tikka</option>
+          </select>
+        </div>
+        <div class="form-control form-control-3">
+          <label for="">Message:</label>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Write Message here..."></textarea>
+        </div>
+        <button id="btn1" onclick="test()">Send Alert</button>
+      </form>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="./admin-dashboard.js"></script>
+  <script>
+    const formControl1 = document.querySelector(".city");
+    console.log(formControl1);
+    const formControl2 = document.querySelector(".form-control-2");
+
+    const formControl3 = document.querySelector(".form-control-3");
+    const alert1 = document.querySelector("#alert");
+
+    $(document).ready(function () {
+      $("#btn1").click(function () {
+        if ($(".form-control-3").css("display") == "flex") {
+          alert("ALert Send Successfully");
+        }
+      });
+
+      $(".form-control-2 select").change(function () {
+        $(".form-control-3").css("display", "flex");
+      });
+    });
+    const source = document.querySelector("#location");
+    const target = document.querySelector("#second");
+
+    const displayWhenSelected = (source, value, target) => {
+      const selectedIndex = source.selectedIndex;
+      const isSelected = source[selectedIndex].value === value;
+      target.classList[isSelected ? "add" : "remove"]("show");
+    };
+    source.addEventListener("change", (evt) =>
+      displayWhenSelected(source, "rawalpindi", target)
+    );
+    // Lahore
+    const source1 = document.querySelector("#location");
+    const target1 = document.querySelector("#second1");
+
+    const displayWhenSelected1 = (source, value, target) => {
+      const selectedIndex1 = source.selectedIndex1;
+      const isSelected1 = source[selectedIndex1].value === value;
+      target.classList[isSelected1 ? "add" : "remove"]("show");
+    };
+    source1.addEventListener("change", (evt) =>
+      displayWhenSelected(source1, "lahore", target1)
+    );
+    // Karachi
+    const source2 = document.querySelector("#location");
+    const target2 = document.querySelector("#second2");
+
+    const displayWhenSelected2 = (source, value, target) => {
+      const selectedIndex2 = source.selectedIndex2;
+      const isSelected2 = source[selectedIndex2].value === value;
+      target.classList[isSelected2 ? "add" : "remove"]("show");
+    };
+    source2.addEventListener("change", (evt) =>
+      displayWhenSelected(source2, "Karachi", target2)
+    );
+    // Peshawar
+    const source3 = document.querySelector("#location");
+    const target3 = document.querySelector("#second3");
+
+    const displayWhenSelected3 = (source, value, target) => {
+      const selectedIndex3 = source.selectedIndex3;
+      const isSelected3 = source[selectedIndex3].value === value;
+      target.classList[isSelected3 ? "add" : "remove"]("show");
+    };
+    source3.addEventListener("change", (evt) =>
+      displayWhenSelected(source3, "Peshawar", target3)
+    );
+  </script>
+</body>
+
+</html>

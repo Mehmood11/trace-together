@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="./user-dashboard.css" />
+  <!-- <link rel="stylesheet" href="./contact.css" /> -->
+
+  <!-- Boxicons CSS -->
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <span class="logo_name"><a href="dashboard.html"><img src="./images/logo111.png" alt="" /> </a></span>
+      <a href="dashboard.html"><img src="./images/logo111.png (2).png" alt="" class="second-img"
+          style="width: 35px" /></a>
+    </div>
+    <ul class="nav-links">
+      <li class="active">
+        <a href="#"><i class="bx bx-grid-alt"></i>
+          <span class="link_name">Dashboard</span></a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Dashboard</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="./self-assessment.html"><i class="fas fa-street-view"></i>
+          <span class="link_name">Self Assessment</span></a>
+        <ul class="sub-menu blank">
+          <li>
+            <a class="link_name" href="./self-assessment.html">Self Assessment</a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="./get-sms-alert.html"><i class="fas fa-exclamation-triangle"></i>
+          <span class="link_name">SMS Alert</span></a>
+        <ul class="sub-menu blank">
+          <li>
+            <a class="link_name" href="./get-sms-alert.html">Get SMS Alert</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <div class="icon-link">
+          <a href="#"><i class="far fa-hospital"></i>
+            <span class="link_name">Check Nearby</span></a>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Check Nearby</a></li>
+          <li id="dashboard-8" class="icon-text" target="8">
+            <a href="./vaccination-center.html">Vaccination Center</a>
+          </li>
+          <li id="dashboard-8" class="icon-text" target="8">
+            <a href="./donation-center.html">Donation Center</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class="bx bx-menu" style="float: left"></i>
+      <div class="logo-img">
+        <img src="./images/logo111.png" alt="" />
+      </div>
+
+      <div class="search-bell-account-grid">
+
+        <div class="account">
+          <img src="./images/best-doctors2.jpg" alt="" />
+        </div>
+      </div>
+      <!-- <span class="text">Drop Down Sidebar</span> -->
+
+      <div class="account-section">
+        <ul>
+          <li><a href="my-profile.html">My Profile</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- ///////////////////////////////////////////// -->
+    <div class="dashboard-section dashboard-section-1 active">
+      <!-- Breadcumbs Section -->
+      <ul class="breadcrumbs">
+        <h4>Dashboard</h4>
+        <li class="breadcrumbs__item">
+          <a href="./user-dashboard.html" class="breadcrumbs__link">
+            <i class="bx bx-home"></i> Home
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="./user-dashboard.html" class="breadcrumbs__link breadcrumbs__link--active">Dashboard</a>
+        </li>
+      </ul>
+      <!-- Breadcumbs Section End-->
+      <!-- ////////////////////////////////////////////// -->
+    </div>
+    <div class="analytics">
+
+      <div class="bottom-analytics">
+        <div class="title">
+          <h5><b>Corona</b> Status in PAKISTAN</h5>
+        </div>
+        <div class="bottom">
+          <div class="bottom-1">
+            <i class="fas fa-diagnoses"></i>
+            <h1><span class="counter">2828.1</span>k</h1>
+            <p>Confirm Cases</p>
+          </div>
+          <div class="bottom-1">
+            <i class="fal fa-tombstone-alt"></i>
+            <h1><span class="counter">23.8</span>k</h1>
+            <p>Confirm Deaths</p>
+          </div>
+          <div class="bottom-1">
+            <i class="fas fa-child"></i>
+            <h1><span class="counter">94.2</span>k</h1>
+            <p>Total Recovered</p>
+          </div>
+          <div class="bottom-1">
+            <i class="fas fa-child"></i>
+            <h1><span class="counter">100.9</span>k</h1>
+            <p>Total Affected Territories</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-dashboard-3">
+        <div class="left">
+          <h1>Citywise Spread</h1>
+          <div class="left-1">
+            <p>1.Karachi</p>
+            <div class="span-div">
+              <span style="width: 80%; background-color: yellow"></span>
+            </div>
+            <h5>80</h5>
+          </div>
+          <div class="left-1">
+            <p>2.Lahore</p>
+            <div class="span-div">
+              <span style="width: 60%; background-color: burlywood"></span>
+            </div>
+            <h5>60</h5>
+          </div>
+          <div class="left-1">
+            <p>3.Rawalpindi</p>
+            <div class="span-div">
+              <span style="width: 50%; background-color: brown"></span>
+            </div>
+            <h5>50</h5>
+          </div>
+          <div class="left-1">
+            <p>4.Islamabad</p>
+            <div class="span-div">
+              <span style="width: 56%; background-color: purple"></span>
+            </div>
+            <h5>56</h5>
+          </div>
+        </div>
+        <div class="right">
+          <h1>Helpline</h1>
+          <div class="right-1">
+            <img src="./images/consultaion.jpg" alt="" />
+            <p><b>Consultaion</b><br />+51 2223 433</p>
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div class="right-1">
+            <img src="./images/ambulance.jpg" alt="" />
+            <p><b>Ambulance</b><br />+51 2223 433</p>
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div class="right-1">
+            <img src="./images/emergency.jpg" alt="" />
+            <p><b>Emergency</b><br />+51 2223 433</p>
+            <i class="fas fa-phone-alt"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  <script src="./user-dashboard.js"></script>
+</body>
+
+</html>

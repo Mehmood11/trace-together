@@ -1,0 +1,205 @@
+form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 12px;
+  width: 80%;
+  /* border: 1px solid gray; */
+  color: black;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#self_form {
+  width: 60%;
+}
+.title {
+  width: 100%;
+  padding: 1rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* text-align: center; */
+}
+.title h5 {
+  font-weight: 500;
+  font-size: 2rem;
+  position: relative;
+}
+.title h5::before {
+  content: "";
+  width: 7px;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  background-color: var(--red);
+}
+
+form .form-control {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin: 5px;
+  /* border-bottom: 2px solid var(--red); */
+  margin-top: 10px;
+  border-radius: 10px;
+  /* background-color: blueviolet; */
+}
+form .form-control label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+form .form-control input[type="number"],
+form .form-control input[type="text"],
+form .form-control input[type="email"],
+form .form-control select {
+  width: 100%;
+  padding: 9px 10px;
+  border: none;
+  /* background: transparent; */
+  border-bottom: 2px solid var(--red);
+  outline: none;
+  border-radius: 5px;
+}
+/* ::-webkit-input-placeholder {
+    } */
+
+form .form-control select {
+  color: white;
+  background-color: var(--red);
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 9px 10px;
+  border-radius: 5px;
+}
+form a button {
+  padding: 9px 30px;
+  border-radius: 5px;
+  border: none;
+  transition: 0.3s ease-in-out;
+  background-color: var(--red);
+  color: white;
+  cursor: pointer;
+  margin-top: 5px;
+}
+form a button:hover {
+  letter-spacing: 3px;
+}
+table tbody tr td .fa-trash-alt {
+  color: red;
+}
+@media screen and (max-width: 1070px) {
+  #self_form {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 802px) {
+  #self_form {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 769px) {
+  form {
+    width: 100%;
+    padding: 10px;
+    box-shadow: none;
+  }
+  .title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  form .form-control {
+    flex-direction: column;
+  }
+  form .form-control label,
+  form .form-control input[type="number"],
+  form .form-control input[type="text"],
+  form .form-control select {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 409px) {
+  form,
+  .self-form-container {
+    padding: 4px;
+  }
+  .title h5 {
+    font-size: 16px;
+  }
+
+  form .form-control {
+    padding: 3px;
+    margin: 0;
+  }
+}
+
+.self-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+label {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.check_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
+  margin-top: 5px;
+}
+.checkbox_form-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid var(--red);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+}
+.checkbox_form-control label {
+  padding-right: 10px;
+}
+select {
+  margin-top: 10px;
+  width: 100%;
+  padding: 9px 10px;
+  border: none;
+  /* background: transparent; */
+  border-bottom: 2px solid var(--red);
+  outline: none;
+  border-radius: 5px;
+}
+
+#country_travelled,
+#age,
+#race,
+#covid_symptoms,
+#sick,
+#close_contact {
+  display: none;
+}
+@media screen and (max-width: 409px) {
+  .self-form-container {
+    padding: 4px;
+  }
+}
